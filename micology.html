@@ -4,64 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mycology – Lorenzo Vergata</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        body.dark {
-            display: block;
-            padding: 2rem;
-        }
-        .page-content {
-            max-width: 800px;
-            margin: 2rem auto;
-        }
-        .page-content h1 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            color: #ffffff;
-        }
-        .back-link {
-            display: inline-block;
-            margin-bottom: 2rem;
-            color: #c084fc;
-            text-decoration: none;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        .doc-list {
+        /* Additional styling for the species list */
+        .species-list {
             list-style: none;
             padding: 0;
+            margin-top: 1.5rem;
         }
-        .doc-list li {
-            margin-bottom: 1.5rem;
+        .species-list li {
+            background: #1a1f36;
+            margin-bottom: 0.5rem;
+            border-radius: 6px;
+            transition: background 0.2s;
         }
-        .doc-list a {
-            font-size: 1.1rem;
-            color: #c084fc;
+        .species-list li:hover {
+            background: #242b42;
+        }
+        .species-list a {
+            display: block;
+            padding: 0.8rem 1rem;
+            color: #e0e0f0;
             text-decoration: none;
+            font-size: 1.05rem;
         }
-        .doc-list a:hover {
-            text-decoration: underline;
+        .species-list a::before {
+            content: "🍄 ";
+            margin-right: 0.3rem;
         }
-        .doc-list .desc {
-            color: #a0a0b0;
-            font-size: 0.9rem;
+        .species-list a:hover {
+            color: #c084fc;
+        }
+        .pdf-link {
+            display: inline-block;
+            margin-top: 2rem;
+            background: #c084fc;
+            color: #0b1021;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .pdf-link:hover {
+            background: #a855f7;
         }
     </style>
 </head>
 <body class="dark">
-    <div class="page-content">
-        <a href="index.html" class="back-link">← Back to Home</a>
-        <h1>Mycology</h1>
-        <p style="color:#c0c0d0; margin-bottom:2rem;">Mycology resources and personal materials.</p>
 
-        <ul class="doc-list">
-            <li>
-                <a href="files/mycology/Corso_di_Micologia.pdf" target="_blank">📄 Corso di Micologia</a>
-                <p class="desc">Complete course notes on mycology.</p>
-            </li>
-            <!-- Add more PDFs as <li> items -->
-        </ul>
-    </div>
+    <!-- ========== SIDEBAR (same as all pages) ========== -->
+    <aside class="sidebar">
+        <img src="images/avatar.png" alt="Lorenzo Vergata" class="avatar">
+        <h1 class="name">Lorenzo Vergata</h1>
+        <p class="role">PhD Student @PoliMi (DICA)</p>
+        <p class="bio">Student at Accademia Italiana dei Videogiochi (Game Design and Programming)</p>
+
+        <div class="social-links">
+            <a href="mailto:vergatalorenzo@gmail.com" title="Personal email"><i class="fas fa-envelope"></i></a>
+            <a href="mailto:lorenzo.vergata@polimi.it" title="Institutional email"><i class="fas fa-envelope"></i></a>
+            <a href="https://twitter.com/verg_sace" target="_blank" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://github.com/Penzo00" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/lorenzo-vergata-b988a5234" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://facebook.com/lorenzo.vergata.7" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://youtube.com/@lorenzovergata3347" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://instagram.com/verg.sace/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitch.tv/son_of_penzo" target="_blank" title="Twitch"><i class="fab fa-twitch"></i></a>
+            <a href="https://t.me/io_mammeta_e_rum" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="https://discord.com/users/penz00" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="publications.html">Publications</a>
+            <a href="projects.html">Projects</a>
+            <a href="videogames.html">Videogames</a>
+            <a href="mycology.html">Mycology</a>
+            <a href="music.html">Music</a>
+            <a href="notes.html">Notes</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </aside>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="content">
+        <div class="page-content">
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <h1>🍄 My Mushroom Collection</h1>
+            <p style="color:#c0c0d0;">
+                A living catalog of all the sporophore species I’ve encountered in the wild – my personal <strong>Pokédex of fungi</strong>.
+                Each entry links to a dedicated page (coming soon) with photos and notes.
+            </p>
+
+            <!-- The species list will be populated and sorted by JavaScript -->
+            <ul id="species-list" class="species-list">
+                <!-- Species are inserted here dynamically -->
+            </ul>
+
+            <p style="color:#c0c0d0; margin-top:1.5rem;">
+                For a complete reference, check out the full course notes:
+            </p>
+            <a href="files/mycology/Corso_di_Micologia.pdf" target="_blank" class="pdf-link">
+                🍄📄 Corso di Micologia (PDF)
+            </a>
+        </div>
+    </main>
+
+    <script>
+        // Automatically sorted species list
+        const species = [
+            "Amanita vaginata",
+            "Daedalea quercina",
+            "Lactarius acerrimus",
+            "Lactifluus piperatus",
+            "Lactifluus volemus",
+            "Russula aurea",
+            "Russula fetens",
+            "Russula heterophylla",
+            "Russula vesca",
+            "Tylopilus felleus",
+            "Xerocomus subdomentosus",
+            "Boletus edulis"
+        ];
+
+        // Sort alphabetically (case-insensitive)
+        species.sort((a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }));
+
+        const listElement = document.getElementById('species-list');
+        species.forEach(name => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = '#';   // placeholder link – replace with your own species pages later
+            a.textContent = name;
+            a.title = `Learn more about ${name}`;
+            li.appendChild(a);
+            listElement.appendChild(li);
+        });
+    </script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

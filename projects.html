@@ -3,11 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAGE TITLE – Lorenzo Vergata</title>
+    <title>Projects – Lorenzo Vergata</title>
     <!-- Font Awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- YOUR custom CSS (same as homepage) -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Additional styling for project cards (already defined in style.css, but safe to keep) */
+        .card {
+            background-color: #1a1f36;
+            border-radius: 8px;
+            padding: 1.5rem;
+            border: 1px solid rgba(255,255,255,0.05);
+            margin-bottom: 2rem;
+        }
+        .card h2 {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-bottom: 0.75rem;
+            border-bottom: none;
+        }
+        .pdf-link {
+            display: inline-block;
+            background: #c084fc;
+            color: #0b1021;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
+            margin-top: 0.5rem;
+        }
+        .pdf-link:hover {
+            background: #a855f7;
+        }
+    </style>
 </head>
 <body class="dark">
 
@@ -45,17 +75,37 @@
         </nav>
     </aside>
 
-    <!-- ========== MAIN CONTENT AREA (dark background guaranteed) ========== -->
+    <!-- ========== MAIN CONTENT ========== -->
     <main class="content">
         <div class="page-content">
             <a href="index.html" class="back-link">← Back to Home</a>
-
-            <!-- PUT YOUR UNIQUE CONTENT HERE -->
             <h1>Projects</h1>
-<p><strong>Deep Learning Project</strong><br>
-Brief description of what you built or studied.<br>
-<em>Add links to code or demos.</em></p>
-            <!-- END UNIQUE CONTENT -->
+            <p style="color:#c0c0d0; margin-bottom: 2rem;">
+                Relevant technological projects that I remember and are worth mentioning.
+            </p>
+
+            <!-- Project Card: A-MYCO -->
+            <div class="card">
+                <h2>🕶️ A‑MYCO: Prototyping the Eyes of a Myco‑Robot</h2>
+                <p style="color:#c0c0d0; font-size: 0.95rem;">
+                    <strong>Authors:</strong> Chiara D'Amato, Edoardo Torre, Lorenzo Vergata<br>
+                    <strong>Context:</strong> MSc Engineering Physics – Digital System Design course project by Professor Salice, Politecnico di Milano
+                </p>
+                <p style="color:#c0c0d0;">
+                    A‑MYCO is a portable, low‑cost device designed to help hikers and mushroom enthusiasts safely explore forests by providing real‑time mushroom detection and species classification.
+                    The system captures video frames with a camera; a fine‑tuned <strong>YOLO11‑l</strong> model detects the presence of mushrooms, and a <strong>FasterViT‑0</strong> network classifies the species from a custom dataset of over 1,800 mushroom classes (MO1822).
+                    The device alerts the user via speech synthesis (Piper‑TTS) only when a mushroom is spotted, allowing them to enjoy the walk without distractions.
+                    The prototype was tested on a Raspberry Pi 400, demonstrating feasibility for edge deployment.
+                </p>
+                <p style="color:#c0c0d0;">
+                    <strong>My contribution:</strong> I worked on the dataset creation pipeline (downloading and cleaning Mushroom Observer images, handling synonyms, data augmentation), model training and evaluation, and overall system integration.
+                </p>
+                <a href="files/projects/DSD_Group_11___IEEE_Conference_Template.pdf" target="_blank" class="pdf-link">
+                    📄 Read the full paper (PDF)
+                </a>
+            </div>
+
+            <!-- You can add more project cards here in the future -->
 
         </div>
     </main>
@@ -64,4 +114,3 @@ Brief description of what you built or studied.<br>
     <script src="js/script.js"></script>
 </body>
 </html>
-
