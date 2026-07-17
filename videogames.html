@@ -6,11 +6,40 @@
     <title>Videogames – Lorenzo Vergata</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* minor tweaks for game cards */
+        .game-card {
+            background-color: #1a1f36;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .game-card h3 {
+            color: #fff;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        .game-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            background: #c084fc;
+            color: #0b1021;
+            padding: 0.4rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .game-link:hover {
+            background: #a855f7;
+        }
+    </style>
 </head>
 <body class="dark">
 
+    <!-- Universal Sidebar (copy this into every page) -->
     <aside class="sidebar">
-        <!-- COPY THE EXACT SAME SIDEBAR FROM THE TEMPLATE ABOVE -->
         <img src="images/avatar.png" alt="Lorenzo Vergata" class="avatar">
         <h1 class="name">Lorenzo Vergata</h1>
         <p class="role">PhD Student @PoliMi (DICA)</p>
@@ -38,6 +67,10 @@
             <a href="videogames.html">Videogames</a>
             <a href="mycology.html">Mycology</a>
             <a href="music.html">Music</a>
+            <a href="books.html">Books</a>
+            <a href="movies.html">Movies</a>
+            <a href="theatre.html">Theatre</a>
+            <a href="sports.html">Sports</a>
             <a href="notes.html">Notes</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -46,18 +79,55 @@
     <main class="content">
         <div class="page-content">
             <a href="index.html" class="back-link">← Back to Home</a>
-            <h1>Videogames</h1>
-            <ul>
-                <li>Student projects from Accademia Italiana dei Videogiochi</li>
-                <li>Personal game prototypes</li>
-                <li>Game jams</li>
-            </ul>
-
-            <h2>Featured Game</h2>
-            <p>
-                🎮 <strong>Feed Me, Quack!</strong> – an experimental roguelike created by a small team.<br>
-                <a href="https://polimi-game-collective.itch.io/feed-me-quack" target="_blank">Play on itch.io →</a>
+            <h1>🎮 Videogames</h1>
+            <p style="color:#c0c0d0; margin-bottom:2rem;">
+                My journey in game design and play. Here you'll find games I've created and a collection of titles I've enjoyed.
             </p>
+
+            <!-- ========== DEVELOPED GAMES ========== -->
+            <h2 style="color:#fff; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:0.3rem;">🕹️ Developed Games</h2>
+
+            <div class="game-card">
+                <h3>🦆 Feed Me, Quack!</h3>
+                <p style="color:#c0c0d0;">
+                    An experimental roguelike game created by a small team of four during a game jam / course project.
+                    I co‑developed the game and contributed to design and mechanics.
+                </p>
+                <a href="https://polimi-game-collective.itch.io/feed-me-quack" target="_blank" class="game-link">
+                    Play on itch.io →
+                </a>
+            </div>
+
+            <div class="game-card">
+                <h3>🧩 MazePlatform</h3>
+                <p style="color:#c0c0d0;">
+                    <strong>Status:</strong> Work in Progress – playable demo link coming soon.
+                </p>
+                <p style="color:#c0c0d0;">
+                    A classic maze‑tilting ball game built entirely in C++ with Unreal Engine. The player tilts a platform to guide
+                    a physically simulated ball through a procedurally generated maze. Maze layout is defined by a simple text grid
+                    (<code>#</code> = wall, <code>o</code> = cone), making levels extremely easy to modify.
+                </p>
+                <p style="color:#c0c0d0;">
+                    The project demonstrates procedural level creation, real‑time physics interaction, and pure C++ integration
+                    without any Blueprint logic. All key parameters (tilt speed, max angle, etc.) are exposed for tuning.
+                </p>
+                <!-- Add a real link when ready -->
+                <!-- <a href="#" target="_blank" class="game-link">🔗 Play MazePlatform</a> -->
+            </div>
+
+            <!-- ========== PLAYED GAMES ========== -->
+            <h2 style="color:#fff; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:0.3rem; margin-top:3rem;">🎮 Games I've Played & Enjoyed</h2>
+            <p style="color:#c0c0d0;">
+                A growing list of titles that have inspired me or that I simply loved. (More details and personal ratings coming soon.)
+            </p>
+            <ul style="color:#c0c0d0; list-style: none; padding: 0;">
+                <li style="margin-bottom:0.4rem;">• <strong>The Legend of Zelda: Breath of the Wild</strong></li>
+                <li style="margin-bottom:0.4rem;">• <strong>Celeste</strong></li>
+                <li style="margin-bottom:0.4rem;">• <strong>Hades</strong></li>
+                <li style="margin-bottom:0.4rem;">• <strong>Outer Wilds</strong></li>
+                <!-- Add your own favourites -->
+            </ul>
         </div>
     </main>
 
