@@ -3,83 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notes – Lorenzo Vergata</title>
+    <title>Notes · Lorenzo Vergata</title>
+    <meta name="description" content="Lorenzo Vergata: PhD student in Civil Engineering at Politecnico di Milano and Game Design student at AIV.">
+    <meta property="og:title" content="Notes · Lorenzo Vergata">
+    <meta property="og:description" content="Lorenzo Vergata: PhD student in Civil Engineering at Politecnico di Milano and Game Design student at AIV.">
+    <meta property="og:image" content="images/avatar.png">
+    <link rel="icon" href="images/avatar.png">
+    <script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        body.dark {
-            display: block;
-            padding: 2rem;
-        }
-        .page-content {
-            max-width: 800px;
-            margin: 2rem auto;
-        }
-        .page-content h1 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            color: #ffffff;
-        }
-        .back-link {
-            display: inline-block;
-            margin-bottom: 2rem;
-            color: #c084fc;
-            text-decoration: none;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        .notes-list {
-            list-style: none;
-            padding: 0;
-        }
-        .notes-list li {
-            margin-bottom: 1.5rem;
-        }
-        .notes-list a {
-            font-size: 1.1rem;
-            color: #c084fc;
-            text-decoration: none;
-        }
-        .notes-list a:hover {
-            text-decoration: underline;
-        }
-        .notes-list .desc {
-            color: #a0a0b0;
-            font-size: 0.9rem;
-        }
-    </style>
 </head>
-<body class="dark">
-    <div class="page-content">
-        <a href="index.html" class="back-link">← Back to Home</a>
-        <h1>Notes</h1>
-        <p style="color:#c0c0d0; margin-bottom:2rem;">Course notes and summaries.</p>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a class="brand" href="index.html">Lorenzo Vergata</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="videogames.html">Games</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="mycology.html">Mycology</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="icon-btn theme-btn" type="button" aria-label="Change theme"><i class="fas fa-circle-half-stroke"></i></button>
+            <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
 
-        <ul class="notes-list">
-            <li>
-                <a href="files/notes/Lecture_Notes_on_Advanced_Gyroscopes.pdf" target="_blank">📄 Advanced Gyroscopes</a>
-                <p class="desc">Notes on PhD course Advanced Gyroscopes (5th edition) by Professor Giacomo Langfelder.</p>
-            </li>
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="kicker">Study</span>
+                <h1>Notes</h1>
+                <p>Notes I write while studying. <span class="badge done">Finished</span> notes are complete and revised; <span class="badge wip">Work in progress</span> ones are still growing. Feel free to use them, and tell me if you spot a mistake.</p>
+            </div>
+        </section>
+        <section class="section" style="border-top:0;padding-top:0"><div class="container">
+<div class="filters" data-target="#notes-grid" role="toolbar" aria-label="Filter notes"><button class="filter active" data-filter="all" aria-pressed="true">All</button><button class="filter" data-filter="done" aria-pressed="false">Finished</button><button class="filter" data-filter="wip" aria-pressed="false">Work in progress</button><button class="filter" data-filter="phd" aria-pressed="false">PhD</button><button class="filter" data-filter="msc" aria-pressed="false">MSc</button><button class="filter" data-filter="aiv" aria-pressed="false">Game design</button><button class="filter" data-filter="other" aria-pressed="false">Other</button></div>
+<div class="grid compact" id="notes-grid">
+<article class="card reveal" data-tags="done phd">
+    <div class="card-top"><div class="card-icon"><i class="fas fa-cube"></i></div><span class="badge done">Finished</span></div>
+    <h3>Nonlinear Solid Mechanics</h3>
+    <p>A continuum approach for engineers: lecture notes of the PhD course (Politecnico di Milano · Università di Trento).</p>
+    <div class="links"><a class="chip" href="files/notes/Nonlinear_Solid_Mechanics.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Read the PDF</a><span class="meta">165 pages</span></div>
+</article>
+<article class="card reveal" data-tags="done msc">
+    <div class="card-top"><div class="card-icon"><i class="fas fa-chart-line"></i></div><span class="badge done">Finished</span></div>
+    <h3>Applied Statistics</h3>
+    <p>Notes on the Applied Statistics course.</p>
+    <div class="links"><span class="chip disabled"><i class="fas fa-hourglass-half"></i> PDF coming soon</span></div>
+</article>
+<article class="card reveal" data-tags="done msc">
+    <div class="card-top"><div class="card-icon"><i class="fas fa-brain"></i></div><span class="badge done">Finished</span></div>
+    <h3>Machine Learning, Deep Learning and Online Learning</h3>
+    <p>From the perceptron to modern deep learning, plus online learning. Part I covers Artificial Neural Networks and Deep Learning.</p>
+    <div class="links"><a class="chip" href="files/notes/Machine_Learning_Deep_Learning_Online_Learning.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Read the PDF</a><span class="meta">137 pages</span></div>
+</article>
+<article class="card reveal" data-tags="wip aiv">
+    <div class="card-top"><div class="card-icon"><i class="fas fa-book-bible"></i></div><span class="badge wip">Work in progress</span></div>
+    <h3>La Bibbia del Game Design</h3>
+    <p>My growing "bible" of game design from the AIV seminars and lessons: feedback culture, teamwork, design theory and more. In Italian.</p>
+    <div class="links"><a class="chip" href="files/notes/La_Bibbia_del_Game_Design.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Read the PDF</a><span class="meta">1,589 pages</span></div>
+</article>
+<article class="card reveal" data-tags="wip phd">
+    <div class="card-top"><div class="card-icon"><i class="fas fa-compass"></i></div><span class="badge wip">Work in progress</span></div>
+    <h3>Advanced Gyroscopes</h3>
+    <p>Notes on the PhD course Advanced Gyroscopes (5th edition) by Prof. Giacomo Langfelder.</p>
+    <div class="links"><a class="chip" href="files/notes/Lecture_Notes_on_Advanced_Gyroscopes.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Read the PDF</a></div>
+</article>
+<article class="card reveal" data-tags="wip msc">
+    <div class="card-top"><div class="card-icon"><i class="fas fa-network-wired"></i></div><span class="badge wip">Work in progress</span></div>
+    <h3>Artificial Neural Networks and Deep Learning</h3>
+    <p>Notes on the course by Prof. Giacomo Boracchi and Prof. Matteo Matteucci.</p>
+    <div class="links"><a class="chip" href="files/notes/ANN.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Read the PDF</a></div>
+</article>
+<article class="card reveal" data-tags="wip msc">
+    <div class="card-top"><div class="card-icon"><i class="fas fa-compress"></i></div><span class="badge wip">Work in progress</span></div>
+    <h3>Model Order Reduction Techniques</h3>
+    <p>Notes on model order reduction techniques, by Prof. Andrea Manzoni.</p>
+    <div class="links"><a class="chip" href="files/notes/Model_Order_Reduction_Techniques.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Read the PDF</a></div>
+</article>
+<article class="card reveal" data-tags="wip aiv">
+    <div class="card-top"><div class="card-icon"><i class="fas fa-gamepad"></i></div><span class="badge wip">Work in progress</span></div>
+    <h3>Unreal Engine Fundamentals</h3>
+    <p>Blueprint principles of Unreal Engine plus the Sound Masterclass at AIV. In Italian.</p>
+    <div class="links"><a class="chip" href="files/notes/Introduzione_a_Unreal_Engine.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Read the PDF</a></div>
+</article>
+<article class="card reveal" data-tags="wip other">
+    <div class="card-top"><div class="card-icon"><i class="fas fa-seedling"></i></div><span class="badge wip">Work in progress</span></div>
+    <h3>Corso di Micologia</h3>
+    <p>Course notes on mycology. In Italian.</p>
+    <div class="links"><a class="chip" href="files/mycology/Corso_di_Micologia.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Read the PDF</a></div>
+</article>
+</div>
+        </div></section>
+    </main>
 
-            <li>
-                <a href="files/notes/ANN.pdf" target="_blank">📄 Artificial Neural Networks and Deep Learning</a>
-                <p class="desc">Notes on "as the name says" course, by Professors Giacomo Boracchi and Matteo Matteucci.</p>
-            </li>
-            <li>
-                <a href="files/notes/Introduzione_a_Unreal_Engine.pdf" target="_blank">📄 Unreal Engine Fundamentals</a>
-                <p class="desc">Blueprints principles of Unreal Engine + Sound Masterclass by AIV (Accademia Italiana dei Videogiochi).</p>
-            </li>
-            <li>
-                <a href="files/notes/Model_Order_Reduction_Techniques.pdf" target="_blank">📄 Model Order Reduction Techniques</a>
-                <p class="desc">Notes on model order reduction techniques, by Professor Andrea Manzoni.</p>
-            </li>
-            <li>
-                <a href="files/mycology/Corso_di_Micologia.pdf" target="_blank">📄 Corso di Micologia</a>
-                <p class="desc">Complete course notes on mycology.</p>
-            </li>
+    <footer>
+        <div class="container">
+            <span>© <span id="year">2026</span> Lorenzo Vergata · Milan, Italy</span>
+            <nav><a href="books.html">Books</a> <a href="movies.html">Movies</a> <a href="theatre.html">Theatre</a> <a href="sports.html">Sports</a> <a href="files/cv/Lorenzo_Vergata_CV.pdf">CV (PDF)</a></nav>
+        </div>
+    </footer>
 
-            <!-- Add more notes as <li> items -->
-        </ul>
-    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

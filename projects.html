@@ -3,114 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects – Lorenzo Vergata</title>
-    <!-- Font Awesome icons -->
+    <title>Projects · Lorenzo Vergata</title>
+    <meta name="description" content="Lorenzo Vergata: PhD student in Civil Engineering at Politecnico di Milano and Game Design student at AIV.">
+    <meta property="og:title" content="Projects · Lorenzo Vergata">
+    <meta property="og:description" content="Lorenzo Vergata: PhD student in Civil Engineering at Politecnico di Milano and Game Design student at AIV.">
+    <meta property="og:image" content="images/avatar.png">
+    <link rel="icon" href="images/avatar.png">
+    <script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- YOUR custom CSS (same as homepage) -->
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        /* Additional styling for project cards (already defined in style.css, but safe to keep) */
-        .card {
-            background-color: #1a1f36;
-            border-radius: 8px;
-            padding: 1.5rem;
-            border: 1px solid rgba(255,255,255,0.05);
-            margin-bottom: 2rem;
-        }
-        .card h2 {
-            font-size: 1.5rem;
-            color: #ffffff;
-            margin-bottom: 0.75rem;
-            border-bottom: none;
-        }
-        .pdf-link {
-            display: inline-block;
-            background: #c084fc;
-            color: #0b1021;
-            padding: 0.6rem 1.2rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background 0.2s;
-            margin-top: 0.5rem;
-        }
-        .pdf-link:hover {
-            background: #a855f7;
-        }
-    </style>
 </head>
-<body class="dark">
-
-    <!-- ========== SIDEBAR (keep exactly the same on every page) ========== -->
-    <aside class="sidebar">
-        <img src="images/avatar.png" alt="Lorenzo Vergata" class="avatar">
-        <h1 class="name">Lorenzo Vergata</h1>
-        <p class="role">PhD Student @PoliMi (DICA)</p>
-        <p class="bio">Student at Accademia Italiana dei Videogiochi (Game Design and Programming)</p>
-
-        <div class="social-links">
-            <a href="mailto:vergatalorenzo@gmail.com" title="Personal email"><i class="fas fa-envelope"></i></a>
-            <a href="mailto:lorenzo.vergata@polimi.it" title="Institutional email"><i class="fas fa-envelope"></i></a>
-            <a href="https://twitter.com/verg_sace" target="_blank" title="Twitter"><i class="fab fa-x-twitter"></i></a>
-            <a href="https://github.com/Penzo00" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/lorenzo-vergata-b988a5234" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://facebook.com/lorenzo.vergata.7" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-            <a href="https://youtube.com/@lorenzovergata3347" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="https://instagram.com/verg.sace/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.twitch.tv/son_of_penzo" target="_blank" title="Twitch"><i class="fab fa-twitch"></i></a>
-            <a href="https://t.me/io_mammeta_e_rum" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
-            <a href="https://discord.com/users/penz00" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a class="brand" href="index.html">Lorenzo Vergata</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="videogames.html">Games</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="mycology.html">Mycology</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="icon-btn theme-btn" type="button" aria-label="Change theme"><i class="fas fa-circle-half-stroke"></i></button>
+            <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
         </div>
+    </header>
 
-        <nav class="sidebar-nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="publications.html">Publications</a>
-            <a href="projects.html">Projects</a>
-            <a href="videogames.html">Videogames</a>
-            <a href="mycology.html">Mycology</a>
-            <a href="music.html">Music</a>
-            <a href="notes.html">Notes</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </aside>
-
-    <!-- ========== MAIN CONTENT ========== -->
-    <main class="content">
-        <div class="page-content">
-            <a href="index.html" class="back-link">← Back to Home</a>
-            <h1>Projects</h1>
-            <p style="color:#c0c0d0; margin-bottom: 2rem;">
-                Relevant technological projects that I remember and are worth mentioning.
-            </p>
-
-            <!-- Project Card: A-MYCO -->
-            <div class="card">
-                <h2>🕶️ A‑MYCO: Prototyping the Eyes of a Myco‑Robot</h2>
-                <p style="color:#c0c0d0; font-size: 0.95rem;">
-                    <strong>Authors:</strong> Chiara D'Amato, Edoardo Torre, Lorenzo Vergata<br>
-                    <strong>Context:</strong> MSc Engineering Physics – Digital System Design course project by Professor Salice, Politecnico di Milano
-                </p>
-                <p style="color:#c0c0d0;">
-                    A‑MYCO is a portable, low‑cost device designed to help hikers and mushroom enthusiasts safely explore forests by providing real‑time mushroom detection and species classification.
-                    The system captures video frames with a camera; a fine‑tuned <strong>YOLO11‑l</strong> model detects the presence of mushrooms, and a <strong>FasterViT‑0</strong> network classifies the species from a custom dataset of over 1,800 mushroom classes (MO1822).
-                    The device alerts the user via speech synthesis (Piper‑TTS) only when a mushroom is spotted, allowing them to enjoy the walk without distractions.
-                    The prototype was tested on a Raspberry Pi 400, demonstrating feasibility for edge deployment.
-                </p>
-                <p style="color:#c0c0d0;">
-                    <strong>My contribution:</strong> I worked on the dataset creation pipeline (downloading and cleaning Mushroom Observer images, handling synonyms, data augmentation), model training and evaluation, and overall system integration.
-                </p>
-                <a href="files/projects/DSD_Group_11___IEEE_Conference_Template.pdf" target="_blank" class="pdf-link">
-                    📄 Read the full paper (PDF)
-                </a>
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="kicker">Build</span>
+                <h1>Projects</h1>
+                <p>Technical projects worth mentioning: deep learning, edge AI and high performance computing. Games have their <a href="videogames.html">own page</a>.</p>
             </div>
-
-            <!-- You can add more project cards here in the future -->
-
-        </div>
+        </section>
+        <section class="section" style="border-top:0;padding-top:0"><div class="container">
+<div class="filters" data-target="#project-grid" role="toolbar" aria-label="Filter projects"><button class="filter active" data-filter="all" aria-pressed="true">All</button><button class="filter" data-filter="dl" aria-pressed="false">Deep learning</button><button class="filter" data-filter="edge" aria-pressed="false">Edge AI</button><button class="filter" data-filter="hpc" aria-pressed="false">HPC</button></div>
+<div class="grid" id="project-grid">
+<article class="card reveal" data-tags="dl edge">
+    <div class="card-top"><div class="card-icon"><i class="fas fa-eye"></i></div><span class="meta">Digital System Design · Politecnico di Milano</span></div>
+    <h3>A-MYCO: Prototyping the Eyes of a Myco-Robot</h3>
+    <p>A portable, low-cost device that spots mushrooms on a hike and tells you the species. A fine-tuned YOLO11-l detects them, a FasterViT-0 classifies over 1,800 species (MO1822 dataset), and Piper-TTS speaks the result. Tested on a Raspberry Pi 400. I built the dataset pipeline, trained and evaluated the models, and integrated the system.</p>
+    <div class="links"><a class="chip" href="files/projects/DSD_Group_11___IEEE_Conference_Template.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a><a class="chip" href="https://github.com/Penzo00/AMYCO-Robot" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a></div>
+</article>
+<article class="card reveal" data-tags="edge">
+    <div class="card-top"><div class="card-icon"><i class="fas fa-microphone-lines"></i></div><span class="meta">Current project</span></div>
+    <h3>Condominium meeting minutes, automated</h3>
+    <p>A CPU-only pipeline for an 8 GB edge device: it records a meeting, transcribes Italian speech with a fast ASR network, rewrites it with an on-device LLM, typesets the minutes in LaTeX and prints them, one isolated folder per meeting.</p>
+    <div class="links"></div>
+</article>
+<article class="card reveal" data-tags="hpc">
+    <div class="card-top"><div class="card-icon"><i class="fas fa-dna"></i></div><span class="meta">High Performance Computing</span></div>
+    <h3>Smith-Waterman on CUDA</h3>
+    <p>A parallel GPU implementation of the Smith-Waterman local sequence alignment algorithm.</p>
+    <div class="links"><a class="chip" href="https://github.com/Penzo00/Smith-Waterman" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a></div>
+</article>
+</div>
+        </div></section>
     </main>
 
-    <!-- Active link script (same as homepage) -->
+    <footer>
+        <div class="container">
+            <span>© <span id="year">2026</span> Lorenzo Vergata · Milan, Italy</span>
+            <nav><a href="books.html">Books</a> <a href="movies.html">Movies</a> <a href="theatre.html">Theatre</a> <a href="sports.html">Sports</a> <a href="files/cv/Lorenzo_Vergata_CV.pdf">CV (PDF)</a></nav>
+        </div>
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>

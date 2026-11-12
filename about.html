@@ -3,57 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About – Lorenzo Vergata</title>
+    <title>About · Lorenzo Vergata</title>
+    <meta name="description" content="Lorenzo Vergata: PhD student in Civil Engineering at Politecnico di Milano and Game Design student at AIV.">
+    <meta property="og:title" content="About · Lorenzo Vergata">
+    <meta property="og:description" content="Lorenzo Vergata: PhD student in Civil Engineering at Politecnico di Milano and Game Design student at AIV.">
+    <meta property="og:image" content="images/avatar.png">
+    <link rel="icon" href="images/avatar.png">
+    <script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="dark">
-
-    <!-- SIDEBAR (exactly the same as index.html) -->
-    <aside class="sidebar">
-        <img src="images/avatar.png" alt="Lorenzo Vergata" class="avatar">
-        <h1 class="name">Lorenzo Vergata</h1>
-        <p class="role">PhD Student @PoliMi (DICA)</p>
-        <p class="bio">Student at Accademia Italiana dei Videogiochi (Game Design and Programming)</p>
-        <div class="social-links">
-            <a href="mailto:vergatalorenzo@gmail.com" title="Personal email"><i class="fas fa-envelope"></i></a>
-            <a href="mailto:lorenzo.vergata@polimi.it" title="Institutional email"><i class="fas fa-envelope"></i></a>
-            <a href="https://twitter.com/verg_sace" target="_blank" title="Twitter"><i class="fab fa-x-twitter"></i></a>
-            <a href="https://github.com/Penzo00" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/lorenzo-vergata-b988a5234" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://facebook.com/lorenzo.vergata.7" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-            <a href="https://youtube.com/@lorenzovergata3347" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="https://instagram.com/verg.sace/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.twitch.tv/son_of_penzo" target="_blank" title="Twitch"><i class="fab fa-twitch"></i></a>
-            <a href="https://t.me/io_mammeta_e_rum" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
-            <a href="https://discord.com/users/penz00" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a class="brand" href="index.html">Lorenzo Vergata</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="videogames.html">Games</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="mycology.html">Mycology</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="icon-btn theme-btn" type="button" aria-label="Change theme"><i class="fas fa-circle-half-stroke"></i></button>
+            <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
         </div>
-        <nav class="sidebar-nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="publications.html">Publications</a>
-            <a href="projects.html">Projects</a>
-            <a href="videogames.html">Videogames</a>
-            <a href="mycology.html">Mycology</a>
-            <a href="music.html">Music</a>
-            <a href="notes.html">Notes</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </aside>
+    </header>
 
-    <!-- PAGE CONTENT -->
-    <main class="content">
-        <div class="page-content">
-            <a href="index.html" class="back-link">← Back to Home</a>
-            <h1>About</h1>
-            <p>Hi all! I'm an aspirant game designer. I love playing trumpet, sprinting, mushrooms and, of course, play (not necessary with videogames or board games). I love being entertained and, above all, to entertain. I seek for new experiences to undertake, to explore myself or share with others.</p>
-            <p>I'm a PhD student of the civil engineering department at Politecnico di Milano, after a master in Engineering Physics and a bachelor in Material Science and Nanotechnology Engineering, with some months spent in Music Engineering and High Performance Computing Engineering.</p>
-            <p>My research topics involve multi-sensor fusion and calibration of MEMS and sensors in general, leveraging on data assimilation and multi-fidelity techniques, where deep learning may be included.</p>
-            <p>I hope there is the possibility to use the discovered instruments as videogame tools and mechanics. I'm here trying to give at least 50% of me to change career in the near/mid-future.</p>
-            <p>I also co-developed <strong>Feed Me, Quack!</strong>, an experimental roguelike game created by a small team of four people.</p>
-            <p>I’m especially interested in developing serious games, advergames, and games that preserve and share people’s memories and experiences.</p>
-        </div>
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="kicker">About</span>
+                <h1>Hi, I'm Lorenzo</h1>
+                <p>Engineer, PhD student, game design student, trumpeter and mushroom hunter.</p>
+            </div>
+        </section>
+        <section class="section" style="border-top:0;padding-top:0">
+            <div class="container prose">
+                <p>I'm an aspiring <strong>technical game designer</strong>. I love playing the trumpet, sprinting, mushrooms and, of course, playing, with or without videogames and board games. I love being entertained and, above all, entertaining. I'm always looking for new experiences, to explore myself or to share with others.</p>
+                <p>On <strong>11 September 2026</strong> I started a <strong>PhD in Civil Engineering at Politecnico di Milano</strong> (DICA), after a research internship in the same department. Before that I took an MSc in Engineering Physics and a BSc in Materials Science and Nanotechnology Engineering, with some months spent in Music Engineering and High Performance Computing Engineering.</p>
+                <p>My research is about <strong>multi-sensor fusion and calibration of MEMS</strong> and sensors in general, built on data assimilation and multi-fidelity techniques, with deep learning where it helps.</p>
+                <p>In parallel I'm in my <strong>first year of Game Design at Accademia Italiana dei Videogiochi</strong>, with the goal of becoming a technical designer. I've taken part in two game jams, as game programmer and game designer on <a href="https://gabris-games.itch.io/the-weigh-of-gold" target="_blank" rel="noopener">The Weigh of Gold</a> and as game programmer on <a href="https://gaetanostrong.itch.io/severancepackage" target="_blank" rel="noopener">Severance Package</a>, and I co-developed <a href="https://polimi-game-collective.itch.io/feed-me-quack" target="_blank" rel="noopener">Feed Me, Quack!</a> with a team of four.</p>
+                <p>I hope to bring the instruments I meet in research into games as tools and mechanics. I'm especially interested in <strong>serious games, advergames</strong>, and games that preserve and share people's memories and experiences.</p>
+                <p>As a 4-valve trumpet player, I had the chance to <strong>play with Ibrahim Maalouf in Bursa and Milan</strong>.</p>
+                <div class="cta-row">
+                    <a class="btn primary" href="files/cv/Lorenzo_Vergata_CV.pdf" target="_blank"><i class="fas fa-file-arrow-down"></i> Download CV</a>
+                    <a class="btn" href="index.html#experience"><i class="fas fa-route"></i> Experience</a>
+                </div>
+                <div class="two-col" style="margin-top:12px">
+                    <div><div class="mini-title">Interests</div><ul class="icon-list"><li><i class="fas fa-wand-magic-sparkles"></i><span>Technical game design and prototyping</span></li><li><i class="fas fa-satellite-dish"></i><span>Multi-sensor fusion and MEMS self-calibration</span></li><li><i class="fas fa-layer-group"></i><span>Data assimilation and multi-fidelity modelling</span></li><li><i class="fas fa-brain"></i><span>Deep learning and edge AI</span></li><li><i class="fas fa-heart"></i><span>Serious games, advergames and games that keep memories alive</span></li></ul></div>
+                    <div><div class="mini-title">Education</div><ul class="icon-list"><li><i class="fas fa-graduation-cap"></i><span>PhD in Civil Engineering, 2026 – present<span class="sub">Politecnico di Milano</span></span></li><li><i class="fas fa-gamepad"></i><span>Game Design, 1st year, 2026 – present<span class="sub">AIV – Accademia Italiana dei Videogiochi</span></span></li><li><i class="fas fa-atom"></i><span>MSc in Engineering Physics<span class="sub">Politecnico di Milano · 107/110</span></span></li><li><i class="fas fa-flask"></i><span>BSc in Materials Science and Nanotechnology Engineering<span class="sub">Politecnico di Milano · 102/110</span></span></li></ul></div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <span>© <span id="year">2026</span> Lorenzo Vergata · Milan, Italy</span>
+            <nav><a href="books.html">Books</a> <a href="movies.html">Movies</a> <a href="theatre.html">Theatre</a> <a href="sports.html">Sports</a> <a href="files/cv/Lorenzo_Vergata_CV.pdf">CV (PDF)</a></nav>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
