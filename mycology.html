@@ -3,28 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mycology – Lorenzo Vergata</title>
+    <title>Mycology · Lorenzo Vergata</title>
+    <meta name="description" content="Lorenzo Vergata: PhD student in Civil Engineering at Politecnico di Milano and Game Design student at AIV.">
+    <meta property="og:title" content="Mycology · Lorenzo Vergata">
+    <meta property="og:description" content="Lorenzo Vergata: PhD student in Civil Engineering at Politecnico di Milano and Game Design student at AIV.">
+    <meta property="og:image" content="images/avatar.png">
+    <link rel="icon" href="images/avatar.png">
+    <script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="dark">
-
-    <!-- SIDEBAR (copy from about.html) -->
-    ...
-
-    <main class="content">
-        <div class="page-content">
-            <a href="index.html" class="back-link">← Back to Home</a>
-            <h1>Mycology</h1>
-            <p>Mycology resources and personal materials.</p>
-            <ul class="doc-list" style="list-style:none; padding:0;">
-                <li style="margin-bottom:1.5rem;">
-                    <a href="files/mycology/Corso_di_Micologia.pdf" target="_blank">📄 Corso di Micologia</a>
-                    <p class="desc" style="color:#a0a0b0; font-size:0.9rem;">Complete course notes on mycology.</p>
-                </li>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a class="brand" href="index.html">Lorenzo Vergata</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="videogames.html">Games</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="mycology.html">Mycology</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
+            <button class="icon-btn theme-btn" type="button" aria-label="Change theme"><i class="fas fa-circle-half-stroke"></i></button>
+            <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
         </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="kicker">Fungi</span>
+                <h1>Mycology</h1>
+                <p>A living catalogue of the species I've met in the wild: my personal Pokédex of fungi. I'm a member of the Gruppo Micologico Milanese.</p>
+            </div>
+        </section>
+        <section class="section" style="border-top:0;padding-top:0"><div class="container">
+            <ul class="species"><li>Amanita vaginata</li><li>Boletus edulis</li><li>Daedalea quercina</li><li>Lactarius acerrimus</li><li>Lactifluus piperatus</li><li>Lactifluus volemus</li><li>Russula aurea</li><li>Russula fetens</li><li>Russula heterophylla</li><li>Russula vesca</li><li>Tylopilus felleus</li><li>Xerocomus subdomentosus</li></ul>
+            <div class="cta-row"><a class="btn" href="files/mycology/Corso_di_Micologia.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Corso di Micologia (PDF)</a></div>
+        </div></section>
     </main>
+
+    <footer>
+        <div class="container">
+            <span>© <span id="year">2026</span> Lorenzo Vergata · Milan, Italy</span>
+            <nav><a href="books.html">Books</a> <a href="movies.html">Movies</a> <a href="theatre.html">Theatre</a> <a href="sports.html">Sports</a> <a href="files/cv/Lorenzo_Vergata_CV.pdf">CV (PDF)</a></nav>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
